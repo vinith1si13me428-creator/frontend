@@ -17,10 +17,7 @@
     "react": "^19.1.1",
     "react-apexcharts": "^1.7.0",
     "react-dom": "^19.1.1",
-    "react-scripts": "^5.0.1",
-    "psutil": "^1.0.0",
-    "redis": "^4.0.0",
-    "fastapi-cache": "^0.1.0"
+    "react-scripts": "^5.0.1"
   },
   "browserslist": {
     "production": [
