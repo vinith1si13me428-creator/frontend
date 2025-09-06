@@ -1004,7 +1004,7 @@ function TradingDashboard() {
     useEffect(() => {
         const connectWebSocket = () => {
             try {
-                wsRef.current = new WebSocket(`ws://localhost:8000/ws/live/${selectedSymbol}`);
+                wsRef.current = new WebSocket(`wss://vy-delta-2.onrender.com/ws/live/${selectedSymbol}`);
                 
                 wsRef.current.onopen = () => {
                     console.log('WebSocket connected for', selectedSymbol);
@@ -1342,7 +1342,7 @@ function TradingDashboard() {
                         gap: '1rem',
                         fontSize: '0.875rem'
                     }}>
-                        <span>Connected to: localhost:8000</span>
+                        <span>Connected to: vy-delta-2.onrender.com</span>
                         <span>Strategies Active: {Object.values(strategies).filter(s => s.running).length}</span>
                         <span>Available Strategies: {availableStrategies.length}</span>
                         <span>Total Trades: {tradeStats.total_trades || 0}</span>
