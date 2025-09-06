@@ -1,5 +1,5 @@
 // src/services/apiService.js - Static Class Version
-const API_BASE = process.env.REACT_APP_API_URL || "http://127.0.0.1:8000/api";
+const API_BASE = process.env.REACT_APP_API_URL || "https://vy-delta-2.onrender.com/api";
 
 class APIService {
     static baseURL = API_BASE;
