@@ -31,7 +31,7 @@ const RealTimeMetrics = () => {
 
         // WebSocket for real-time metrics (if available)
         const connectWebSocket = () => {
-            const ws = new WebSocket('ws://localhost:8000/ws/metrics');
+            const ws = new WebSocket('wss://vy-delta-2.onrender.com/ws/metrics');
             
             ws.onopen = () => {
                 setIsConnected(true);
